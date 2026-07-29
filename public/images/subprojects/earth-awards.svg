@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="430" viewBox="0 0 300 430">
+<defs>
+<linearGradient id="gold" x1="0" y1="0" x2="0.95" y2="1">
+<stop offset="0" stop-color="#fff7d2"/><stop offset="0.14" stop-color="#e7c366"/>
+<stop offset="0.3" stop-color="#9a7326"/><stop offset="0.5" stop-color="#ffeaa6"/>
+<stop offset="0.68" stop-color="#8a6424"/><stop offset="0.85" stop-color="#dcb85c"/>
+<stop offset="1" stop-color="#5a3d10"/></linearGradient>
+<radialGradient id="teal" cx="42%" cy="36%" r="72%">
+<stop offset="0" stop-color="#0f5c5e"/><stop offset="55%" stop-color="#083f42"/>
+<stop offset="100%" stop-color="#03282b"/></radialGradient>
+<linearGradient id="rib" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#0a4b4d"/><stop offset="1" stop-color="#04282b"/></linearGradient>
+</defs>
+<path d="M94,238 L154,238 L154,400 L124,372 L94,400 Z" fill="url(#rib)" stroke="#032528" stroke-width="1.5"/><path d="M146,238 L206,238 L206,400 L176,372 L146,400 Z" fill="url(#rib)" stroke="#032528" stroke-width="1.5"/>
+<circle cx="270.0" cy="150.0" r="13" fill="url(#gold)"/><circle cx="266.5" cy="178.7" r="13" fill="url(#gold)"/><circle cx="256.3" cy="205.8" r="13" fill="url(#gold)"/><circle cx="239.8" cy="229.6" r="13" fill="url(#gold)"/><circle cx="218.2" cy="248.8" r="13" fill="url(#gold)"/><circle cx="192.6" cy="262.2" r="13" fill="url(#gold)"/><circle cx="164.5" cy="269.1" r="13" fill="url(#gold)"/><circle cx="135.5" cy="269.1" r="13" fill="url(#gold)"/><circle cx="107.4" cy="262.2" r="13" fill="url(#gold)"/><circle cx="81.8" cy="248.8" r="13" fill="url(#gold)"/><circle cx="60.2" cy="229.6" r="13" fill="url(#gold)"/><circle cx="43.7" cy="205.8" r="13" fill="url(#gold)"/><circle cx="33.5" cy="178.7" r="13" fill="url(#gold)"/><circle cx="30.0" cy="150.0" r="13" fill="url(#gold)"/><circle cx="33.5" cy="121.3" r="13" fill="url(#gold)"/><circle cx="43.7" cy="94.2" r="13" fill="url(#gold)"/><circle cx="60.2" cy="70.4" r="13" fill="url(#gold)"/><circle cx="81.8" cy="51.2" r="13" fill="url(#gold)"/><circle cx="107.4" cy="37.8" r="13" fill="url(#gold)"/><circle cx="135.5" cy="30.9" r="13" fill="url(#gold)"/><circle cx="164.5" cy="30.9" r="13" fill="url(#gold)"/><circle cx="192.6" cy="37.8" r="13" fill="url(#gold)"/><circle cx="218.2" cy="51.2" r="13" fill="url(#gold)"/><circle cx="239.8" cy="70.4" r="13" fill="url(#gold)"/><circle cx="256.3" cy="94.2" r="13" fill="url(#gold)"/><circle cx="266.5" cy="121.3" r="13" fill="url(#gold)"/>
+<circle cx="150" cy="150" r="120" fill="url(#gold)"/>
+<circle cx="150" cy="150" r="110" fill="#4e3512"/>
+<circle cx="150" cy="150" r="106" fill="url(#teal)"/>
+<circle cx="150" cy="150" r="106" fill="none" stroke="url(#gold)" stroke-width="4"/>
+<circle cx="150" cy="150" r="98" fill="none" stroke="#0b6a6c" stroke-width="1.2" opacity="0.5"/>
+<text x="150" y="126" text-anchor="middle" font-family="DejaVu Serif" font-weight="bold" font-size="30" fill="#ffffff" stroke="#04322f" stroke-width="0.9" paint-order="stroke" letter-spacing="2">GEMS</text>
+<text x="150" y="163" text-anchor="middle" font-family="DejaVu Serif" font-weight="bold" font-size="42" fill="#ffffff" stroke="#04322f" stroke-width="0.9" paint-order="stroke" letter-spacing="2">EARTH</text>
+<text x="150" y="197" text-anchor="middle" font-family="DejaVu Serif" font-weight="bold" font-size="27" fill="#ffffff" stroke="#04322f" stroke-width="0.9" paint-order="stroke" letter-spacing="2">AWARDS</text>
+</svg>

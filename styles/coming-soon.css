@@ -1,0 +1,18 @@
+/* Scoped styles for the Coming Soon landing page — prefixed with #coming-soon-page. */
+#coming-soon-page{
+  position:relative;
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  background:#04060d;
+  color:#e9ebf2;
+  font-family:'Inter',system-ui,sans-serif;
+  padding:24px;
+}
+#coming-soon-page .cs-video{
+  display:block;
+  width:auto;height:auto;
+  max-width:min(92vw,600px);
+  max-height:85vh;
+  -webkit-mask-image:radial-gradient(ellipse 60% 55% at center, #000 45%, transparent 78%);
+  mask-image:radial-gradient(ellipse 60% 55% at center, #000 45%, transparent 78%);
+}

@@ -1,0 +1,67 @@
+/* Scoped styles for the Sub-Projects page — prefixed with #subprojects-page. */
+#subprojects-page{
+  --bg:#04060d;--bg2:#070b16;--panel:#0c1324;--panel-2:#0e1730;
+  --line:rgba(255,255,255,0.07);--gold:#c9a24b;--gold-bright:#e8c977;
+  --text:#e9ebf2;--muted:#98a1b6;
+
+  background:
+    radial-gradient(1200px 600px at 50% -200px, rgba(37,58,110,0.35), transparent 60%),
+    radial-gradient(900px 500px at 80% 300px, rgba(20,32,66,0.4), transparent 55%),
+    var(--bg);
+  color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+#subprojects-page .serif{font-family:'Playfair Display',Georgia,serif;}
+#subprojects-page .gold{color:var(--gold-bright);}
+#subprojects-page a{color:inherit;text-decoration:none;}
+#subprojects-page .wrap{max-width:1160px;margin:0 auto;padding:0 28px;}
+
+/* Nav bar itself is styled globally in styles/globals.css — identical on every page. */
+#subprojects-page .btn-gold{display:inline-block;padding:11px 20px;border-radius:40px;background:linear-gradient(180deg,#e8c977,#c9a24b);
+  color:#2a1e05;font-weight:600;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 6px 22px rgba(201,162,75,.28);transition:transform .18s, box-shadow .18s;}
+#subprojects-page .btn-gold:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(201,162,75,.4);}
+
+/* HERO */
+#subprojects-page .hero{text-align:center;padding:74px 0 24px;}
+#subprojects-page .hero-logo{height:140px;width:auto;margin:0 auto 26px;display:block;filter:drop-shadow(0 8px 30px rgba(0,0,0,.55));}
+#subprojects-page .eyebrow{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;}
+#subprojects-page .hero h1{font-size:clamp(34px,5.4vw,60px);line-height:1.08;font-weight:600;letter-spacing:-.01em;}
+#subprojects-page .hero p.lead{max-width:640px;margin:22px auto 0;color:var(--muted);font-size:16px;}
+#subprojects-page .rule{width:60px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:32px auto 0;}
+
+/* PROJECT CARDS — uniform grid, artwork shown in full (contained, never cropped) */
+#subprojects-page .projects{margin:52px 0 10px;display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+#subprojects-page .project{border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;
+  background:linear-gradient(180deg,rgba(20,30,58,.5),rgba(10,16,32,.5));transition:border-color .25s, transform .2s;}
+#subprojects-page .project:hover{border-color:rgba(201,162,75,.4);transform:translateY(-2px);}
+#subprojects-page .thumb{height:250px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line);}
+#subprojects-page .thumb img{max-width:200px;max-height:200px;width:auto;height:auto;object-fit:contain;display:block;}
+#subprojects-page .thumb.win{background:#0a1226;}
+#subprojects-page .thumb.earth{background:#0a1226;}
+#subprojects-page .thumb.doc{background:#0a1428;}
+#subprojects-page .thumb.sol{background:#0a1226;}
+#subprojects-page .thumb.book{background:#0a1226;height:250px;}
+#subprojects-page .thumb.doc img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;}
+#subprojects-page .thumb.book img{max-width:100%;max-height:230px;}
+#subprojects-page .body{padding:26px 28px 28px;display:flex;flex-direction:column;}
+#subprojects-page .tag{align-self:flex-start;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,162,75,.35);border-radius:30px;padding:4px 12px;margin-bottom:14px;}
+#subprojects-page .body h3{font-size:22px;font-weight:600;line-height:1.2;}
+#subprojects-page .body p{color:#c3ccdd;font-size:15px;margin-top:14px;}
+#subprojects-page .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
+#subprojects-page .fact{font-size:10.5px;letter-spacing:.05em;color:var(--gold-bright);background:rgba(201,162,75,.1);border:1px solid rgba(201,162,75,.25);border-radius:6px;padding:5px 10px;}
+#subprojects-page .link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-bright);font-weight:600;}
+#subprojects-page .link .arw{transition:transform .2s;}
+#subprojects-page .link:hover .arw{transform:translateX(4px);}
+
+/* FOOTER */
+#subprojects-page footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 60px;text-align:center;}
+#subprojects-page footer .fmark{display:flex;flex-direction:column;align-items:center;gap:8px;}
+#subprojects-page .footer-logo{height:82px;width:auto;display:block;filter:drop-shadow(0 6px 18px rgba(0,0,0,.5));}
+#subprojects-page footer .email{color:var(--gold-bright);font-size:13px;letter-spacing:.06em;}
+#subprojects-page footer .founded{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:16px;}
+#subprojects-page footer .tag2{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:6px;}
+
+@media(max-width:860px){
+  #subprojects-page .projects{grid-template-columns:1fr;}
+  #subprojects-page .thumb{height:230px;}
+}

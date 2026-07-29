@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="200" viewBox="0 0 480 200">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8c977"/>
+      <stop offset="0.5" stop-color="#c9a24b"/>
+      <stop offset="1" stop-color="#9c7a2f"/>
+    </linearGradient>
+  </defs>
+  <!-- emblem -->
+  <g transform="translate(100,100)">
+    <circle r="82" fill="none" stroke="url(#gold)" stroke-width="4"/>
+    <circle r="70" fill="none" stroke="#12203c" stroke-width="1.5" opacity="0.5"/>
+    <!-- SH monogram -->
+    <text x="0" y="26" text-anchor="middle" font-family="Georgia, 'Playfair Display', serif" font-size="86" font-weight="700" fill="#12203c" letter-spacing="-4">SH</text>
+    <!-- top & bottom stars -->
+    <text x="0" y="-52" text-anchor="middle" font-size="16" fill="url(#gold)">★</text>
+  </g>
+  <!-- wordmark -->
+  <g transform="translate(210,100)">
+    <line x1="0" y1="-40" x2="210" y2="-40" stroke="url(#gold)" stroke-width="2"/>
+    <text x="0" y="-8" font-family="Georgia, 'Playfair Display', serif" font-size="44" font-weight="700" fill="#12203c" letter-spacing="1">SCOTCH</text>
+    <text x="2" y="34" font-family="Georgia, 'Playfair Display', serif" font-size="44" font-weight="700" fill="#12203c" letter-spacing="1">HOPKINS</text>
+    <line x1="0" y1="52" x2="210" y2="52" stroke="url(#gold)" stroke-width="2"/>
+    <text x="105" y="76" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#c9a24b" letter-spacing="5">ARTIST · CULTURE</text>
+  </g>
+</svg>
