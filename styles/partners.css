@@ -40,7 +40,7 @@
 #partners-page .btn-gold:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(201,162,75,.4);}
 
 /* HERO */
-#partners-page .hero{text-align:center;padding:82px 0 44px;}
+#partners-page .hero{text-align:center;padding:167px 0 44px;}
 #partners-page .eyebrow{
   font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);
   margin-bottom:26px;

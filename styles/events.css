@@ -22,7 +22,7 @@
 #events-page .btn-gold:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(201,162,75,.4);}
 
 /* HERO */
-#events-page .hero{text-align:center;padding:74px 0 26px;}
+#events-page .hero{text-align:center;padding:159px 0 26px;}
 #events-page .hero-logo{height:140px;width:auto;margin:0 auto 26px;display:block;filter:drop-shadow(0 8px 30px rgba(0,0,0,.55));}
 #events-page .eyebrow{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;}
 #events-page .hero h1{font-size:clamp(34px,5.4vw,60px);line-height:1.08;font-weight:600;letter-spacing:-.01em;}
