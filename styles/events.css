@@ -9,7 +9,7 @@
     radial-gradient(900px 500px at 80% 300px, rgba(20,32,66,0.4), transparent 55%),
     var(--bg);
   color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.6;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
 }
 #events-page .serif{font-family:'Playfair Display',Georgia,serif;}
 #events-page .gold{color:var(--gold-bright);}

@@ -21,7 +21,6 @@
   font-family:'Inter',system-ui,sans-serif;
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
 }
 #partners-page .serif{font-family:'Playfair Display',Georgia,serif;}
 #partners-page .gold{color:var(--gold-bright);}
