@@ -63,23 +63,22 @@
 .prompt .arrow{position:absolute;top:20px;right:18px;color:var(--gold);opacity:0;transform:translateX(-6px);transition:.25s;font-size:14px}
 .prompt:hover .arrow{opacity:1;transform:none}
 .idea-cta{display:flex;align-items:center;gap:10px;justify-content:center;color:var(--muted-2);font-size:12.5px;font-style:italic;margin-top:20px}
-/* ---- Arenas of diplomacy ---- */
-.arena-cluster{margin-top:40px}
-.arena-cluster:first-child{margin-top:8px}
-.arena-cluster-head{display:flex;align-items:center;gap:16px;margin-bottom:20px}
-.arena-cluster-head .acl{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
-.arena-cluster-head.teal .acl{color:var(--teal-soft)}
-.arena-cluster-head .acline{height:1px;flex:1;background:linear-gradient(90deg,var(--line-gold),rgba(255,255,255,0))}
-.arena-cluster-head.teal .acline{background:linear-gradient(90deg,var(--line-teal),rgba(255,255,255,0))}
-.arena-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-@media(max-width:900px){.arena-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.arena-grid{grid-template-columns:1fr}}
-.arena-item{border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 16px;background:linear-gradient(160deg,rgba(20,30,64,0.4),rgba(10,16,38,0.28));position:relative;transition:.25s}
-.arena-item:hover{border-color:var(--line-teal);transform:translateY(-3px);background:linear-gradient(160deg,rgba(20,30,64,0.55),rgba(10,16,38,0.4))}
-.arena-item .an{display:flex;align-items:baseline;gap:8px;font-weight:600;font-size:14px;margin-bottom:6px}
-.arena-item .an .anum{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:15px;color:var(--gold-soft);min-width:22px}
-.arena-item:hover .an .anum{color:var(--teal-soft)}
-.arena-item .ad{font-size:12px;color:var(--muted);line-height:1.5}
+/* ---- 25 Forms of Diplomacy (theme cards) ---- */
+.themes-head{text-align:center;margin-bottom:8px}
+.theme-count{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:40px}
+.dtheme{margin-bottom:22px;background:linear-gradient(180deg,rgba(18,32,63,.5),rgba(12,22,44,.5));border:1px solid var(--line);border-radius:16px;padding:26px 26px 10px}
+.dtheme:first-of-type{margin-top:8px}
+.dtheme-title{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:20px}
+.dtheme-num{width:26px;height:26px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font-size:12px;color:#1a1204;background:var(--gold-grad);font-weight:800}
+.dforms-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 40px}
+@media(max-width:700px){.dforms-grid{grid-template-columns:1fr}}
+.dform{padding:14px 0;border-top:1px solid var(--line)}
+.dform:first-child,.dforms-grid>.dform:nth-child(2){border-top:none}
+@media(max-width:700px){.dforms-grid>.dform:nth-child(2){border-top:1px solid var(--line)}}
+.dform-name{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:5px}
+.dform-name b{color:var(--gold);font-weight:700}
+.dform-desc{font-size:13.5px;color:var(--muted);line-height:1.5;font-style:italic}
+.dform-sdg{display:inline-block;font-style:normal;font-size:10px;letter-spacing:.08em;color:var(--gold-deep);font-weight:700;border:1px solid var(--line-gold);border-radius:12px;padding:1px 8px;margin-left:6px;white-space:nowrap;vertical-align:middle}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
@@ -160,6 +159,24 @@ header.nav{
 }
 .nav-links a:hover{color:var(--ink)}
 .nav-links a.active{color:var(--gold-bright)}
+.nav-links .has-sub{position:relative}
+.nav-links .has-sub>.nav-top{display:inline-flex;align-items:center;gap:6px;cursor:pointer;white-space:nowrap}
+.nav-links .has-sub>.nav-top::after{content:"";width:5px;height:5px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(45deg);transition:.2s;margin-top:-2px}
+.nav-links .has-sub:hover>.nav-top{color:var(--ink)}
+.nav-links .has-sub:hover>.nav-top::after{border-color:var(--gold)}
+.nav-links .submenu{
+  position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(8px);
+  min-width:240px;background:rgba(9,13,26,0.97);backdrop-filter:blur(16px);
+  border:1px solid var(--line);border-radius:12px;padding:8px;
+  opacity:0;visibility:hidden;transition:opacity .22s,transform .22s;
+  box-shadow:0 24px 50px rgba(0,0,0,.5);z-index:120;
+}
+.nav-links .has-sub:hover .submenu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(6px)}
+.nav-links .submenu::before{content:"";position:absolute;top:-10px;left:0;right:0;height:12px}
+.nav-links .submenu a{display:block;padding:10px 14px;border-radius:8px;font-size:12px;letter-spacing:.04em;color:var(--muted);text-transform:none;transition:.18s;white-space:normal}
+.nav-links .submenu a:hover{background:rgba(212,175,55,0.10);color:var(--ink)}
+.nav-links .submenu a .sm-d{display:block;font-size:10.5px;color:var(--muted-2);letter-spacing:0;margin-top:2px;text-transform:none}
+.nav-links .submenu a:hover .sm-d{color:var(--muted)}
 .brand{display:flex;flex-direction:column;align-items:center;gap:2px;justify-self:start}
 .brand-logo{height:52px;width:auto;display:block;filter:drop-shadow(0 4px 14px rgba(0,0,0,.5))}
 .nav-right{justify-self:end}
@@ -247,6 +264,8 @@ section{position:relative}
 .card .idx{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:38px;color:var(--gold-soft);line-height:1;margin-bottom:14px}
 .card h3{font-size:18px;margin-bottom:10px}
 .card p{color:var(--muted);font-size:14.5px}
+.voice-avatar{width:56px;height:56px;border-radius:50%;overflow:hidden;border:1px solid var(--line-gold);margin-bottom:16px;background:linear-gradient(165deg,#141f42,#0a1226)}
+.voice-avatar img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
@@ -280,7 +299,7 @@ section{position:relative}
 .case{text-align:center;padding:96px 0}
 .case .big-quote{
   font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;
-  font-size:clamp(28px,4.6vw,52px);line-height:1.15;max-width:16ch;margin:0 auto;letter-spacing:-0.01em;
+  font-size:clamp(28px,4.6vw,52px);line-height:1.15;max-width:30ch;margin:0 auto;letter-spacing:-0.01em;
 }
 .case .sub{color:var(--muted);max-width:680px;margin:26px auto 0;font-size:17px}
 
@@ -369,6 +388,7 @@ section{position:relative}
   background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
 .person .portrait::after{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 50% 20%,rgba(212,175,55,0.10),transparent 70%)}
+.person .portrait img{width:100%;height:100%;object-fit:cover;object-position:top center;position:relative;z-index:0}
 .person .pn{font-weight:700;font-size:15px}
 .person .pr{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.4;padding:0 6px}
 .person .pt{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:8px}
